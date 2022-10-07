@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#root {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+a,
+button{
+    cursor: pointer;
+}
+
+.Navbar {
+  width: 100%;
+  height: 50px;
+  background: #7ac751;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 135px;
+}
+
+.nav_chap {
+  width: 224px;
+}
+
+.nav_chap p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.nav_ong{
+    display: flex;
+}
+
+.nav_ong select{
+    margin-right: 40px;
+    background: 0;
+    border: 0;
+    color: #fff;
+}
+
+.nav_ong select option{
+    font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #fff;
+background-color: #000;
+}
+
+
+.nav_ong p{
+    margin-right: 20px;
+}
