@@ -11,6 +11,7 @@
 body {
   max-width: 1440px;
   margin: 0 auto;
+  background: gray;
 }
 
 #root {
@@ -23,8 +24,8 @@ body {
 }
 
 a,
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
 
 .Navbar {
@@ -50,28 +51,247 @@ button{
   color: #ffffff;
 }
 
-.nav_ong{
-    display: flex;
+.nav_ong {
+  display: flex;
 }
 
-.nav_ong select{
-    margin-right: 40px;
-    background: 0;
-    border: 0;
-    color: #fff;
+.nav_ong select {
+  margin-right: 40px;
+  background: 0;
+  border: 0;
+  color: #fff;
 }
 
-.nav_ong select option{
-    font-family: 'Rubik';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-color: #fff;
-background-color: #000;
+.nav_ong select option {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  background-color: #000;
 }
 
+.nav_ong p {
+  margin-right: 20px;
+  color: #fff;
+}
 
-.nav_ong p{
-    margin-right: 20px;
+.nav_ong a {
+  text-decoration: none;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+/* ========== Header ===========*/
+
+.Header {
+  width: 100%;
+  background-color: #ffffff;
+  height: 76px;
+  padding: 0px 134px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head_logo {
+  width: 147px;
+  height: 38.96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head_logo img {
+  width: 31px;
+  height: 38px;
+}
+
+.head_logo p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #555555;
+}
+
+.head_search {
+  width: 582px;
+  height: 46px;
+  border: 3px solid #7ac751;
+  border-radius: 8px;
+  display: flex;
+}
+
+.head_search input {
+  width: 70%;
+  height: 99%;
+  border: 0;
+  border-right: 2px solid rgba(227, 227, 227, 0.78);
+  padding-left: 25px;
+}
+
+.head_search select {
+  width: 101px;
+  padding-left: 10px;
+  height: 99%;
+  border: 0;
+}
+
+.head_search select option {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
+}
+
+.head_search button {
+  width: 55px;
+  height: 100%;
+  background: #7ac751;
+  border-radius: 0px 7px 6px 0px;
+  border: 0;
+  outline: 0;
+  margin-left: 16.84px;
+}
+
+.head_user {
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head_user button {
+  border: 0;
+  background: 0;
+}
+
+.Section_1 {
+  padding-top: 20px;
+  background: #fff;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sec1_box1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 67px;
+  background: #f7f8fa;
+}
+
+.sec1_1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 135px;
+}
+
+.sec_1_button {
+  width: 260px;
+  height: 67px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #7ac751;
+  padding: 0 30px;
+}
+
+.sec_1_button button {
+  background: 0;
+  border: 0;
+}
+
+.sec_1_button p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.sec1_links {
+  width: 1045px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 82px;
+}
+
+.sec1_links a {
+  padding-right: 65px;
+  text-decoration: none;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
+}
+
+.sec1_box2 {
+  background: #fff;
+  width: 100%;
+  padding-left: 135px;
+  display: flex;
+}
+
+.sec_1_2 {
+  width: 260px;
+  height: 454px;
+  background: #f7f8fa;
+}
+
+.sec_1_2 {
+  width: 260px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 29px;
+}
+
+.sec_1_2 p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.sec1_3_box {
+  width: 1045px;
+  padding: 12px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.sec1_3 {
+  width: 899px;
+  height: 439px;
+  background: rgba(34, 205, 221, 0.15);
+  border-radius: 1px;
+  background-image: url(./img/Furniture\ 1.png);
+  background-repeat: no-repeat;
+  background-position: 380px 40px;
 }
