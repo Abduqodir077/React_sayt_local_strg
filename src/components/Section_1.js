@@ -1,4 +1,11 @@
 import kategories from "../img/kategories.png";
+import chair1 from "../img/chair1.png";
+import chair2 from "../img/chair2.png";
+import chair3 from "../img/chair3.png";
+import sec1_img1 from "../img/sec1_img1.png";
+import sec1_img2 from "../img/sec1_img2.png";
+import sec1_img3 from "../img/sec1_img3.png";
+import sec1_img4 from "../img/sec1_img4.png";
 
 function Section_1() {
   return (
@@ -67,6 +74,55 @@ function Section_1() {
                 <span>Get 50% off all products</span>
                 <button>SHOP NOW</button>
                 </div>
+                <div className="sec1_3_2">
+                    <div className="sec1_3_mini">
+                        <img src={chair1} alt="chair1" />
+                    </div>
+                    <div className="sec1_3_mini">
+                        <img src={chair2} alt="chair2" />
+                    </div>
+                    <div className="sec1_3_mini">
+                        <img src={chair3} alt="chair3" />
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="sec1_box3">
+            <div className="sec1_box3_1">
+              <div className="sec1_box3_img">
+                <img src={sec1_img1} alt="sec1_img1" />
+              </div>
+              <div className="sec1_box3_par">
+                <p>Free Shipping</p>
+                <span>Orders over $100</span>
+              </div>
+            </div>
+            <div className="sec1_box3_1">
+              <div className="sec1_box3_img">
+                <img src={sec1_img2} alt="sec1_img1" />
+              </div>
+              <div className="sec1_box3_par">
+                <p>Smart Gift Card</p>
+                <span>Buy $1000 to get card</span>
+              </div>
+            </div>
+            <div className="sec1_box3_1">
+              <div className="sec1_box3_img">
+                <img src={sec1_img3} alt="sec1_img1" />
+              </div>
+              <div className="sec1_box3_par">
+                <p>Quick Payment</p>
+                <span>100% secure payment</span>
+              </div>
+            </div>
+            <div className="sec1_box3_1">
+              <div className="sec1_box3_img">
+                <img src={sec1_img4} alt="sec1_img1" />
+              </div>
+              <div className="sec1_box3_par">
+                <p>24/7 Support</p>
+                <span>Quick support</span>
               </div>
             </div>
           </div>
