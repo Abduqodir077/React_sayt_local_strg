@@ -10,7 +10,10 @@ import sec3_8 from "../img/sec3_8.png";
 
 function Section_3(){
 
+    let [data, setData] = useState({});
+
     let [malumot, setMalumot] = useState([
+    
         {
             id: 1,
             img: sec3_1,
