@@ -10,8 +10,6 @@ import sec3_8 from "../img/sec3_8.png";
 
 function Section_3(){
 
-    let [data, setData] = useState({});
-
     let [malumot, setMalumot] = useState([
     
         {
@@ -73,6 +71,23 @@ function Section_3(){
     ]
     );
 
+    let [localData, setLocalData] = useState(
+        JSON.parse(localStorage.getItem("data")) || []
+      );
+
+    function send(data) {
+            if (localStorage.getItem("data")) {
+                localStorage.setItem(
+                  "data",
+                  JSON.stringify([...JSON.parse(localStorage.getItem("data")),data])
+                );
+                setLocalData(JSON.parse(localStorage.getItem("data")));
+              } else {
+                localStorage.setItem("data", JSON.stringify([data]));
+                setLocalData(JSON.parse(localStorage.getItem("data")));
+              }
+    }
+
     return(
         <>
         <div className="Section_3">
@@ -86,13 +101,13 @@ function Section_3(){
             {
                 malumot.map((item) => {
                 return(
-                     <div className="sec3_product"  key={item.id}>
-                    <img src={item.img} alt={item.img + ".png"} />
-                    <p>{item.par}</p>
-                    <span>{item.span}</span>
-                    <b>{item.price}</b>
-                    <button onClick={() => local()}>loc strg</button>
-                     </div>
+                    <div className="sec3_product"  key={item.id}>
+                        <img src={item.img} alt={item.img + ".png"} />
+                        <p>{item.par}</p>
+                        <span>{item.span}</span>
+                        <b>{item.price}</b>
+                        <button onClick={() => send(item)}>_add_</button> 
+                    </div>
                 );
             })
             }                   

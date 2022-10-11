@@ -8,6 +8,7 @@ import sec1_img3 from "../img/sec1_img3.png";
 import sec1_img4 from "../img/sec1_img4.png";
 
 function Section_1() {
+
   return (
     <>
       <div className="Section_1">

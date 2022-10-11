@@ -570,6 +570,7 @@ button {
 }
 
 .sec3_product {
+  margin-bottom: 20px;
   width: 269px;
   height: 388px;
   display: flex;
