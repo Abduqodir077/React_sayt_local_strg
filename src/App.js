@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 import Admin from "./components/Admin";
-import Header from "./components/Header";
-import Navbarr from "./components/Navbarr";
-import Section_1 from "./components/Section_1";
-import Section_2 from "./components/Section_2";
-import Section_3 from "./components/Section_3";
 import "./Style.css";
 import {BrowserRouter as Router, Routes, Route, NavLink} from "react-router-dom"
+import Home from "./components/Home";
 
 
 function App() {
@@ -16,12 +12,9 @@ function App() {
         <Router>
         <Routes>
             <Route path="/admin" element={<Admin/>}/>
+            <Route path="/home" element={<Home/>}/>
         </Routes>
-        <Navbarr/>
-        <Header/>
-        <Section_1/>
-        <Section_2/>
-        <Section_3/>
+        <Home/>
         </Router>
         </>
     );
